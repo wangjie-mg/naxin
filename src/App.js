@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+// import { connect } from 'react-redux';
+
+import main from "./page/main/main.js";
+import org from "./page/org/org.js";
+import enter from "./page/enter/enter.js";
+import review from "./page/review/review.js";
+import orgfrom from "./page/orgfrom/orgfrom.js";
+
+
+
+
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={}
+  }
+  render(){
+    return (
+      <Router>
+        <Route exact path="/" component={main} />
+        <Route exact path="/org" component={org}/>
+        <Route exact path="/enter" component={enter}/>
+        <Route exact path="/review" component={review}/>
+        <Route exact path="/orgfrom" component={orgfrom}/>
+      </Router>
+    );
+  }
+  
 }
-
+// export default connect(
+//   ({user})=>({
+//       a:user.a
+//   }),
+// )(App);
+  
 export default App;

@@ -1,0 +1,15 @@
+.or-list{
+    /* margin: ; */
+    width: 42vw;
+    padding:2vw;
+    margin: 1.5vw;
+    color:rgb(0,0,0,0.65);
+    background-color:#f7f7f7 !important ;
+    box-shadow: 0 0 3px rgba(0,0,0,0.15);
+    display: flex;
+}
+.or-list p {
+    width: 25vw;
+    margin-left:4vw ;
+    margin-bottom:  0;
+}

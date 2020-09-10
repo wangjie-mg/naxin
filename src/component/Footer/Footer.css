@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    margin: auto;
+    flex-wrap:  wrap;
+    justify-content:center;
+    text-align: left;
+    color: #aaa;
+}
+
+.footer a{
+    color: #aaa;
+}
+.footer h3{
+    color: #FFF;
+}
+.fcenter p{
+    word-wrap:break-word;  
+    word-break:break-all; 
+}
