@@ -1,2 +1,14 @@
-/* rgb(102,193,255) */
-/* rgb(234,178,54) */
+.card-back{
+    background:rgb(238,245,251) !important ;
+    border-radius: 7px !important;
+    width: 94vw;
+    margin: 16px auto;
+}
+.showm{
+    display: flex;
+    align-items:center;
+}
+.tags{
+    max-height: 20px !important;
+    margin:0 0 0 3vw;
+}

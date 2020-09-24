@@ -1,21 +1,17 @@
-
 const initstate ={
     webname:"创建社团",
     fileList:[],
     imgurl:"",
-    name:"wangjie",
+    name:"",
     department:'',
     desc:'',
     phone:'',
-    userid:'',
-    tags: ['Unremovable', 'Tag 2', 'Tag 3'],
+    tags: [],
     inputVisible: false,
     inputValue: '',
     editInputIndex: -1,
     editInputValue: '',
-
 }
-
 export default (state = initstate,action) =>{
     switch (action.type){
         case "FILE":
@@ -30,13 +26,26 @@ export default (state = initstate,action) =>{
             return Object.assign({}, state, {
                 tags:action.key
             })
-        case "IMGURL":
+        case "INPUTVB":
             return Object.assign({}, state, {
                 inputVisible:action.key
             })
-        case "IMGURL":
+        case "INPUTVA":
             return Object.assign({}, state, {
-                imgurl:action.key
+                inputValue:action.key
+            })
+        case "EDITI":
+            return Object.assign({}, state, {
+                editInputIndex:action.key
+            })
+        case "EDITV":
+            return Object.assign({}, state, {
+                editInputValue:action.key
+            })
+        case "USER":
+            return Object.assign({}, state, {
+                name:action.key.name,
+                phone:action.key.mobile,
             })
         default:
             return state;

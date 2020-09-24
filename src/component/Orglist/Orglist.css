@@ -1,5 +1,4 @@
 .or-list{
-    /* margin: ; */
     width: 42vw;
     padding:2vw;
     margin: 1.5vw;
@@ -12,4 +11,10 @@
     width: 25vw;
     margin-left:4vw ;
     margin-bottom:  0;
+    -webkit-box-orient: vertical;
+
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
 }

@@ -1,19 +1,38 @@
 .head{
     background-color: #fff  !important;
     box-shadow: 0 2px 8px #f0f1f2 ;
+    /* color:#fff !important; */
     padding:0 !important;
     display: flex;
 }
+.icon svg{
+    width: 2em;
+    height: 2em;
+    
+}
+.head-a{
+    display: flex;
+    align-items: center;
+}
 .head-img{
+    
     margin:0 auto;
-    /* margin-left: 2vw; */
+}
+
+.head-tb{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 1;
+    width: 20px;
+    height: 26px;
 }
 .head-img span{
-    margin-left: 1vw;
-    font-size: 1.35em;
-    font-weight: bold;
+    /* margin-left: 1vw; */
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
 }
 .sh{
-
     margin:5px 20px 0 0;
 }

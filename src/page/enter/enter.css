@@ -1,0 +1,16 @@
+.en-from{
+    padding: 4vw;
+}
+.en-from p{
+ margin-bottom: 0 !important;
+}
+.dload-a{
+    
+    padding: 6px 15px;
+    background: #1890ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    
+}

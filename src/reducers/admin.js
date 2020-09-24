@@ -1,13 +1,13 @@
 const initstate ={
-    webname:"报名详情",
-    alist:[],
+    webname:"添加管理",
+    list:[]
 }
 
 export default (state = initstate,action) =>{
     switch (action.type){
         case "USER":
             return Object.assign({}, state, {
-                alist: action.key,
+                list: action.key,
               });
         default:
             return state;

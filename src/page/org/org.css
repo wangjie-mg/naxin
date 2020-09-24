@@ -1,0 +1,51 @@
+
+.ant-divider{
+    margin: 4vh auto !important;
+    width: 90vw !important;
+    min-width:  90vw !important;
+}
+.org-head{
+    text-align: center ;
+}
+.org-head img{
+    margin: 3vh 0;
+    border-radius: 50%;
+}
+.org-head p{
+    font-size: 21px;
+    font-weight: 400;
+}
+.org-main{
+    padding:0  5vw 5vw 10vw;     
+}
+.org-flex{
+    display: flex;
+    align-items:center;
+}
+.org-fle{
+    display: inline-block;
+}
+.org-title{
+    display: block;
+    font-size: 16px;
+    width: 100px;
+    line-height: 5vh;
+    font-weight: bold;
+    color:rgb(64, 64, 64);
+}
+.org-content{
+    margin: 5px 5px;
+    display: block;
+    text-align: center;
+    color: rgba(0,0,0,0.75);
+}
+.org-tag{
+    margin: 3px !important;
+}
+
+.text:disabled{
+    border:none;
+    background-color : #fff; 
+    color: rgb(0,0,0,0.75) ;
+    opacity:1; 
+}

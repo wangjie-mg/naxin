@@ -1,14 +1,10 @@
 import React from 'react';
 import './Footer.css';
 import { Layout } from "antd";
-// import { Flex,  } from 'antd-mobile';
-// import cookie from "react-cookies";
-
-// import getRequest from "../../_util/request";
 
 import { connect } from 'react-redux';
 const { Footer} = Layout;
-// import { Flex } from 'antd-mobile';
+
 
 
 class Orglist extends React.Component{
@@ -16,25 +12,7 @@ class Orglist extends React.Component{
     super(props);
     this.state={};
   }
-  componentDidMount(){
-    // console.log(this.props.location)
-    // const url = {
-    //     method: "post",
-    //     url: "/api/findog",
-    //     headers: {
-    //       "Content-Type": "application/x-www-form-urlencoded",
-    //     },
-    //   };
-    //   getRequest(url, this.data.bind(this));
-  }
-  // data=(req)=>{
-  //   const {code} =req.data;
-  //   if(code === true){
-  //     this.props.setdata(req.organiza)
-  //   }else{
-  //     message.error("网络错误",2);
-  //   }
-  // }
+ 
 
  
   
@@ -43,7 +21,7 @@ class Orglist extends React.Component{
     
     return(
         <>
-        <Footer style={{marginTop:"3vw", borderTop: "1px solid #ccc", textAlign: "center",background:'#06060b' }}>
+        <Footer style={{marginTop:"3vw", borderTop: "1px solid #ccc", textAlign: "center",background:'rgb(25,42,59)' }}>
             <div className="footer">
                 <div className="fcenter">
                     <h3>联系我们</h3>
