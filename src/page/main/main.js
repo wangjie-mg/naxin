@@ -49,7 +49,7 @@ class Main extends React.Component{
   }
 
   data = (a,req) => {
-      const {code,isadmin} =req.data;
+      const {code,isadmin,isload} =req.data;
       if(code === true){
         if(a===1){
           cookie.save("token", req.data.token, { path: "/" },{ expires: 7000 });
@@ -62,7 +62,7 @@ class Main extends React.Component{
       }else{
         message.error("网络错误",2);
       }
-      if(isadmin){
+      if(isadmin ||isload){
         const url = {
           method: "post",
           url: "/api/findog",
